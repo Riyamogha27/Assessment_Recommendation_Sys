@@ -14,7 +14,7 @@ embeddings = torch.tensor(np.load("/home/riya23235/SHL/assessment_embeddings.npy
 # Load model
 model = SentenceTransformer("all-MiniLM-L6-v2", device=device)
 
-st.title("🔍 SHL Assessment Recommendation System")
+st.title("SHL Assessment Recommendation System")
 
 query = st.text_input("Enter job description or natural language query:")
 

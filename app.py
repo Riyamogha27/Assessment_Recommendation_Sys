@@ -8,8 +8,8 @@ from sentence_transformers import SentenceTransformer, util
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load data
-df = pd.read_csv("/home/riya23235/SHL/Preprocessed_shl_assessments.csv")
-embeddings = torch.tensor(np.load("/home/riya23235/SHL/assessment_embeddings.npy")).to(device)
+df = pd.read_csv("Preprocessed_shl_assessments.csv")
+embeddings = torch.tensor(np.load("assessment_embeddings.npy")).to(device)
 
 # Load model
 model = SentenceTransformer("all-MiniLM-L6-v2", device=device)
